@@ -1,0 +1,8 @@
+fieldset{
+    border-radius: 10px;
+    margin: 15px;
+}
+
+legend{
+    font-weight: bold;
+}

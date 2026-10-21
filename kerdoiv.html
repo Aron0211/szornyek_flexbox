@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="szörnyek">
+    <meta name="keywords" content="szörny, szörnyek">
+    <meta name="author" content="Papp Áron">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papp Áron | Szörnyek-Flexboxal</title>
+    <link rel="stylesheet" href="formazas.css">
+    <link rel="stylesheet" href="kerdoiv.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Fogadj örökbe egy szörnyet</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="">Kezdőlap</a></li>
+                <li><a href="">Minden otthont kereső szörny</a></li>
+                <li><a href="">Fiú szörnyek</a></li>
+                <li><a href="">Lány szörnyek</a></li>
+                <li><a href="kerdoiv.html">Kérdőív</a></li>
+            </ul>
+        </nav>
+        <article>
+            <form>
+                <fieldset>
+                    <legend>Adatok</legend>
+
+                    <div class="nev">
+                        <label for="szorny">Szörny neve</label>
+                        <input type="text" id="szorny" name="szorny" placeholder="Keresztnév">
+                    </div>
+
+                    <div class="email">
+                        <label for="email">Szörny neve</label>
+                        <input type="email" id="email" name="email" placeholder="email@gmail.com">
+                    </div>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Szörny neme</legend>
+
+                    <div>
+                        <input type="radio" id="nem1" name="nem" value="nem">
+                        <label for="nem">Fiú</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="nem2" name="nem" value="nem">
+                        <label for="nem">Lány</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Lokáció</legend>
+                    <div class="lokacio">
+                        <select name="orszag" id="orszag">
+                            <option value="" disabled selected> Kérjük, válassz!</option>
+                            <option value="hu">Magyarország</option>
+                            <option value="IT">Olaszország</option>
+                            <option value="SW">Svájc</option>
+                            <option value="AT">Ausztria</option>
+                            <option value="DE">Németország</option>
+                            <option value="RO">Románia</option>
+                            <option value="SK">Szlovákia</option>
+                            <option value="JP">Japán</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <label for="review">Visszajelzés:</label><br>
+                    <textarea id="review" name="review" rows="4" cols="50"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Szörny színe:</legend>
+                    <label for="szin">Szín kiválasztása:</label>
+                    <input type="color" id="szin" name="szin">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Szörny születésének dátuma:</legend>
+                    <label for="datum">Dátum kiválasztása:</label>
+                    <input type="date" id="datum" name="datum">
+                </fieldset>
+            </form>
+        </article>
+    </main>
+</body>
+</html>
