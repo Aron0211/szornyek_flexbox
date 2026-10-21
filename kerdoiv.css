@@ -6,3 +6,17 @@ fieldset{
 legend{
     font-weight: bold;
 }
+
+@media (max-width: 600px){
+    article{
+        margin: 10px;
+    }
+ 
+    fieldset{
+        padding: 10px 12px 15px;
+    }
+ 
+    button[type="submit"]{
+        align-self: stretch;
+    }
+}
